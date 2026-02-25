@@ -29,11 +29,6 @@
             key-positions = <39 38>;
         };
 
-        tab_L {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
         shift_tab_L {
             bindings = <&kp LS(TAB)>;
             key-positions = <13 12>;
@@ -45,7 +40,7 @@
         };
 
         minus {
-            bindings = <&kp LC(MINUS)>;
+            bindings = <&kp MINUS>;
             key-positions = <9 8>;
         };
     };
