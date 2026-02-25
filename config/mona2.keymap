@@ -51,36 +51,36 @@
     };
 
     macros {
-        BT0_Win: new_macro {
+        BT0_Win: BT0_Win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 0>;
 
-            label = "NEW_MACRO";
+            label = "BT0_WIN";
         };
 
-        BT1_Mac: new_macro {
+        BT1_Mac: BT1_Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 0>;
 
-            label = "NEW_MACRO";
+            label = "BT1_MAC";
         };
 
-        BT2_iPadPro: new_macro {
+        BT2_iPadPro: BT2_iPadpro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 0>;
 
-            label = "NEW_MACRO";
+            label = "BT2_IPADPRO";
         };
 
-        BT3_iPadmini: new_macro {
+        BT3_iPadmini: BT3_iPadmini {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 3>, <&macro_wait_time 200>, <&to 0>;
 
-            label = "NEW_MACRO";
+            label = "BT3_IPADMINI";
         };
 
         BT4_Win: BT4_Win {
@@ -91,14 +91,14 @@
             label = "BT4_WIN";
         };
 
-        doin: new_macro {
+        doin: doin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
                 <&kp D &kp O &kp I &kp N &kp B &kp O &kp NUMBER_1 &kp N0>;
 
-            label = "NEW_MACRO";
+            label = "DOIN";
         };
 
         multipli: multipli {
