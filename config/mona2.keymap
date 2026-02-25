@@ -141,7 +141,7 @@
 &kp Q             &kp W         &kp E         &kp R            &kp T                                    &kp Y        &kp U  &kp I      &kp O    &lt 10 P
 &mt LCTRL A       &kp S         &kp D         &kp F            &kp G                       &kp ESCAPE   &kp H        &kp J  &kp K      &lt 9 L  &mt RCTRL SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V            &kp B        &kp TAB        &kp TAB      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&lt 8 ESCAPE      &kp LEFT_WIN  &kp LEFT_ALT  &lt 9 BACKSPACE  &lt 6 ENTER  &lt 1 LANG2    &lt 1 LANG1  &lt 7 SPACE                             &lt 11 DELETE
+&lt 8 ESCAPE      &kp LEFT_WIN  &kp LEFT_ALT  &lt 9 BACKSPACE  &lt 6 SPACE  &lt 1 LANG2    &lt 1 LANG1  &lt 7 ENTER                             &lt 11 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -163,7 +163,7 @@
 &kp Q             &kp W      &kp E         &kp R            &kp T                                    &kp Y        &kp U  &kp I      &kp O    &lt 10 P
 &mt LEFT_GUI A    &kp S      &kp D         &kp F            &kp G                       &kp ESCAPE   &kp H        &kp J  &kp K      &lt 9 L  &mt RIGHT_GUI SEMICOLON
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V            &kp B        &kp TAB        &kp TAB      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&lt 8 ESCAPE      &kp LCTRL  &kp LEFT_ALT  &lt 9 BACKSPACE  &lt 6 ENTER  &lt 1 LANG2    &lt 1 LANG1  &lt 7 SPACE                             &lt 11 DELETE
+&lt 8 ESCAPE      &kp LCTRL  &kp LEFT_ALT  &lt 9 BACKSPACE  &lt 6 SPACE  &lt 1 LANG2    &lt 1 LANG1  &lt 7 ENTER                             &lt 11 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -185,7 +185,7 @@
 &kp Q             &kp W      &kp E         &kp R            &kp T                                    &kp Y        &kp U  &kp I      &kp O    &lt 10 P
 &mt LEFT_GUI A    &kp S      &kp D         &kp F            &kp G                       &kp ESCAPE   &kp H        &kp J  &kp K      &lt 9 L  &mt RIGHT_GUI SEMICOLON
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V            &kp B        &kp TAB        &kp TAB      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&lt 8 ESCAPE      &kp LCTRL  &kp LEFT_ALT  &lt 9 BACKSPACE  &lt 6 ENTER  &lt 1 LANG2    &lt 1 LANG1  &lt 7 SPACE                             &lt 11 DELETE
+&lt 8 ESCAPE      &kp LCTRL  &kp LEFT_ALT  &lt 9 BACKSPACE  &lt 6 SPACE  &lt 1 LANG2    &lt 1 LANG1  &lt 7 ENTER                             &lt 11 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
