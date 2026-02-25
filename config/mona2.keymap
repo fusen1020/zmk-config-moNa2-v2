@@ -82,6 +82,13 @@
 
             label = "BT4_WIN";
         };
+
+        doin: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp O &kp I &kp N &kp B &kp O &kp NUMBER_1 &kp N0>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -127,13 +134,13 @@
 
         Win_shortcut {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9  &kp NUMBER_0
-&trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                  &trans  &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &kp BACKSLASH
-&trans        &trans        &trans            &trans             &trans        &trans    &trans  &trans        &trans                &trans                 &trans        &kp PIPE
-&trans        &trans        &trans            &trans             &trans        &trans    &trans  &trans                                                                   &trans
+&trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LC(T)                              &trans               &trans                  &kp RG(TAB)  &trans             &trans
+&trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LC(W)                   &trans     &kp RG(PRINTSCREEN)  &kp RG(RC(LEFT_ARROW))  &kp RG(D)    &kp RG(RC(RIGHT))  &trans
+&trans  &kp LS(TAB)         &kp LALT            &kp TAB        &kp LS(LC(T))  &kp LG(S)    &kp RG(S)  &kp RG(RS(S))        &trans                  &trans       &trans             &trans
+&doin   &trans              &trans              &trans         &trans         &trans       &trans     &trans                                                                       &doin
             >;
 
-            sensor-bindings = <&scroll_right_left>;
+            sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PG_UP)>;
         };
 
         Mac_default {
@@ -149,13 +156,13 @@
 
         Mac_shortcut {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS  &kp UNDERSCORE
-&kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &mkp MB3   &mkp MB1       &mkp MB2      &kp EQUAL  &kp PLUS
-&kp F1           &kp F2       &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &kp F6     &kp F7         &kp F8        &kp F9     &kp F10
-&trans           &trans       &trans             &trans      &trans       &trans     &trans   &trans                                             &trans
+&trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LG(T)                              &trans                &trans                  &kp RG(TAB)  &trans             &trans
+&trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LG(W)                   &trans     &kp RG(RS(NUMBER_3))  &kp RG(RC(LEFT_ARROW))  &kp RG(D)    &kp RG(RC(RIGHT))  &trans
+&trans  &kp LS(TAB)         &kp LALT            &kp TAB        &kp LS(LG(T))  &kp LG(S)    &kp RG(S)  &kp RG(RS(NUMBER_4))  &trans                  &trans       &trans             &trans
+&doin   &trans              &trans              &trans         &trans         &trans       &trans     &trans                                                                        &doin
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LA(RIGHT) LC(LEFT)>;
         };
 
         iPad_default {
