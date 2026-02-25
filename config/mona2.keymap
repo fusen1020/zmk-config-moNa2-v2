@@ -24,16 +24,6 @@
     combos {
         compatible = "zmk,combos";
 
-        layer4_ESC {
-            bindings = <&lt 6 ESC>;
-            key-positions = <39 38>;
-        };
-
-        shift_tab_L {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <13 12>;
-        };
-
         quotation {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <20 19>;
