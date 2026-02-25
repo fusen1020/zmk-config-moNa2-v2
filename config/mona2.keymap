@@ -155,7 +155,7 @@
 &doin   &trans              &trans              &trans         &trans         &trans       &trans     &trans                                                                       &doin
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PG_UP)>;
+            sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PAGE_DOWN)>;
         };
 
         Mac_default {
