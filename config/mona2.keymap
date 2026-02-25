@@ -29,9 +29,24 @@
             key-positions = <39 38>;
         };
 
-        tab {
+        tab_L {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
+        };
+
+        shift_tab_L {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <13 12>;
+        };
+
+        quotation {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <20 19>;
+        };
+
+        minus {
+            bindings = <&kp LC(MINUS)>;
+            key-positions = <9 8>;
         };
     };
 
@@ -86,8 +101,24 @@
         doin: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp D &kp O &kp I &kp N &kp B &kp O &kp NUMBER_1 &kp N0>;
+            bindings =
+                <&macro_tap>,
+                <&kp D &kp O &kp I &kp N &kp B &kp O &kp NUMBER_1 &kp N0>;
+
             label = "NEW_MACRO";
+        };
+
+        multipli: multipli {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_5>,
+                <&macro_release>;
+
+            label = "MULTIPLI";
         };
     };
 
@@ -156,10 +187,10 @@
 
         Mac_shortcut {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LG(T)                              &trans                &trans                  &kp RG(TAB)  &trans             &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LG(W)                   &trans     &kp RG(RS(NUMBER_3))  &kp RG(RC(LEFT_ARROW))  &kp RG(D)    &kp RG(RC(RIGHT))  &trans
-&trans  &kp LS(TAB)         &kp LALT            &kp TAB        &kp LS(LG(T))  &kp LG(S)    &kp RG(S)  &kp RG(RS(NUMBER_4))  &trans                  &trans       &trans             &trans
-&doin   &trans              &trans              &trans         &trans         &trans       &trans     &trans                                                                        &doin
+&trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LG(T)                                      &trans                &trans              &kp RC(UP_ARROW)  &trans         &trans
+&trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LG(W)                       &trans         &kp RG(RS(NUMBER_3))  &kp RC(LEFT_ARROW)  &kp RG(F3)        &kp RC(RIGHT)  &trans
+&trans  &kp LS(TAB)         &kp LEFT_GUI        &kp TAB        &kp LS(LG(T))  &kp LG(SPACE)    &kp RG(SPACE)  &kp RG(RS(NUMBER_4))  &trans              &trans            &trans         &trans
+&doin   &trans              &trans              &trans         &trans         &trans           &trans         &trans                                                                     &doin
             >;
 
             sensor-bindings = <&inc_dec_kp LA(RIGHT) LC(LEFT)>;
@@ -178,21 +209,21 @@
 
         iPad_shortcut {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                     &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &trans  &trans  &kp DELETE      &kp PAGE_UP     &kp PAGE_DOWN    &trans
-&trans  &trans              &trans                  &trans                   &trans                   &trans    &trans  &trans                                                   &trans
+&trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LG(T)                                      &trans                &trans              &kp RC(UP_ARROW)  &trans         &trans
+&trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LG(W)                       &trans         &kp RG(RS(NUMBER_3))  &kp RC(LEFT_ARROW)  &kp RG(F3)        &kp RC(RIGHT)  &trans
+&trans  &kp LS(TAB)         &kp LEFT_GUI        &kp TAB        &kp LS(LG(T))  &kp LG(SPACE)    &kp RG(SPACE)  &kp RG(RS(NUMBER_4))  &trans              &trans            &trans         &trans
+&doin   &trans              &trans              &trans         &trans         &trans           &trans         &trans                                                                     &doin
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp LA(RIGHT) LC(LEFT)>;
         };
 
         Number {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5            &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&trans  &trans  &trans     &trans    &trans                    &trans  &trans     &trans     &trans  &trans
+&kp N1  &kp N2  &kp N3     &kp N4    &kp N5            &trans  &kp N6  &kp N7     &kp N8     &kp N9  &kp N0
+&trans  &trans  &kp MINUS  &kp PLUS  &trans  &trans    &trans  &trans  &multipli  &kp EQUAL  &trans  &trans
+&trans  &trans  &trans     &trans    &trans  &trans    &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
