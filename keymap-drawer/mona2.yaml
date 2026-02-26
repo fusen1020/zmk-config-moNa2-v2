@@ -50,9 +50,9 @@ layers:
   - Ctl+TAB
   - Ctl+T
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Sft+TAB
   - Gui+TAB
-  - {t: ▽, type: trans}
+  - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+LEFT ARROW
@@ -136,9 +136,9 @@ layers:
   - Ctl+TAB
   - Gui+T
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+TAB
   - Ctl+UP ARROW
-  - {t: ▽, type: trans}
+  - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+LEFT ARROW
@@ -222,9 +222,9 @@ layers:
   - Ctl+TAB
   - Gui+T
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Sft+TAB
   - Ctl+UP ARROW
-  - {t: ▽, type: trans}
+  - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+LEFT ARROW
