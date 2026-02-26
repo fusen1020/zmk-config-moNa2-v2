@@ -156,8 +156,8 @@
 
         Mac_shortcut {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LG(T)                                      &trans                &trans              &kp RC(UP_ARROW)  &trans         &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LG(W)                       &trans         &kp RG(RS(NUMBER_3))  &kp RC(LEFT_ARROW)  &kp RG(F3)        &kp RC(RIGHT)  &trans
+&trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LG(T)                                      &trans                &trans              &kp LC(UP_ARROW)  &trans         &trans
+&trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LG(W)                       &trans         &kp RG(RS(NUMBER_3))  &kp LC(LEFT_ARROW)  &kp RG(F3)        &kp LC(RIGHT)  &trans
 &trans  &kp LS(TAB)         &kp LEFT_GUI        &kp TAB        &kp LS(LG(T))  &kp LG(SPACE)    &kp RG(SPACE)  &kp RG(RS(NUMBER_4))  &trans              &trans            &trans         &trans
 &doin   &trans              &trans              &trans         &trans         &trans           &trans         &trans                                                                     &doin
             >;
