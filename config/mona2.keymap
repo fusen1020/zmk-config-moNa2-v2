@@ -33,6 +33,11 @@
             bindings = <&kp MINUS>;
             key-positions = <9 8>;
         };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
