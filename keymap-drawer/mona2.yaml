@@ -20,7 +20,7 @@ layers:
   - H
   - J
   - K
-  - {t: L, h: Mouse}
+  - {t: L, h: Mouse_win}
   - {t: ;, h: RCTRL}
   - {t: Z, h: LEFT SHIFT}
   - X
@@ -37,7 +37,7 @@ layers:
   - {t: ESCAPE, h: Function}
   - LEFT WIN
   - LEFT ALT
-  - {t: BACKSPACE, h: Mouse}
+  - {t: BACKSPACE, h: Mouse_win}
   - {t: SPACE, h: Number}
   - {t: LANG2, h: Win_shortcut}
   - {t: LANG1, h: Win_shortcut}
@@ -106,7 +106,7 @@ layers:
   - H
   - J
   - K
-  - {t: L, h: Mouse}
+  - {t: L, h: Mouse_win}
   - {t: ;, h: RIGHT GUI}
   - {t: Z, h: LEFT SHIFT}
   - X
@@ -123,7 +123,7 @@ layers:
   - {t: ESCAPE, h: Function}
   - LCTRL
   - LEFT ALT
-  - {t: BACKSPACE, h: Mouse}
+  - {t: BACKSPACE, h: Mouse_win}
   - {t: SPACE, h: Number}
   - {t: LANG2, h: Mac_shortcut}
   - {t: LANG1, h: Mac_shortcut}
@@ -132,7 +132,7 @@ layers:
   Mac_shortcut:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
-  - Gui+UP ARROW
+  - Gui+Ctl+F
   - Ctl+TAB
   - Gui+T
   - {t: ▽, type: trans}
@@ -141,9 +141,9 @@ layers:
   - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+LEFT ARROW
+  - Gui+Ctl+Alt+LEFT ARROW
   - Gui+DOWN ARROW
-  - Gui+RIGHT
+  - Gui+Ctl+Alt+RIGHT
   - Gui+W
   - {t: ▽, type: trans}
   - Gui+Sft+3
@@ -192,7 +192,7 @@ layers:
   - H
   - J
   - K
-  - {t: L, h: Mouse}
+  - {t: L, h: Mouse_win}
   - {t: ;, h: RIGHT GUI}
   - {t: Z, h: LEFT SHIFT}
   - X
@@ -209,7 +209,7 @@ layers:
   - {t: ESCAPE, h: Function}
   - LCTRL
   - LEFT ALT
-  - {t: BACKSPACE, h: Mouse}
+  - {t: BACKSPACE, h: Mouse_win}
   - {t: SPACE, h: Number}
   - {t: LANG2, h: iPad_shortcut}
   - {t: LANG1, h: iPad_shortcut}
@@ -218,7 +218,7 @@ layers:
   iPad_shortcut:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
-  - Gui+UP ARROW
+  - '&iPad_window_max'
   - Ctl+TAB
   - Gui+T
   - {t: ▽, type: trans}
@@ -227,9 +227,9 @@ layers:
   - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+LEFT ARROW
+  - '&iPad_window_left'
   - Gui+DOWN ARROW
-  - Gui+RIGHT
+  - '&iPad_window_right'
   - Gui+W
   - {t: ▽, type: trans}
   - Gui+Sft+3
@@ -387,7 +387,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Mouse:
+  Mouse_win:
   - PAGE UP
   - {t: ▽, type: trans}
   - UP ARROW
@@ -516,6 +516,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  Mouse_apple:
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+[
+  - Gui+]
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [20, 19]
   k: ''''
