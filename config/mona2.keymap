@@ -90,6 +90,62 @@
 
             label = "DOIN";
         };
+
+        iPad_window_left: iPad_window_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LCTRL &kp CAPS>;
+
+            label = "IPAD_WINDOW_LEFT";
+        };
+
+        iPad_window_right: iPad_window_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp LCTRL &kp CAPS>;
+
+            label = "IPAD_WINDOW_RIGHT";
+        };
+
+        iPad_window_max: iPad_window_max {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp CAPS>;
+
+            label = "IPAD_WINDOW_MAX";
+        };
+
+        iPad_taskview: iPad_taskview {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp CAPS>;
+
+            label = "IPAD_TASKVIEW";
+        };
     };
 
     behaviors {
@@ -148,10 +204,10 @@
 
         Mac_shortcut {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LG(T)                                      &trans                &kp RS(TAB)         &kp LC(UP_ARROW)  &kp RC(TAB)    &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LG(W)                       &trans         &kp RG(RS(NUMBER_3))  &kp LC(LEFT_ARROW)  &kp RG(F3)        &kp LC(RIGHT)  &trans
-&trans  &kp LS(TAB)         &kp LEFT_GUI        &kp TAB        &kp LS(LG(T))  &kp LG(SPACE)    &kp RG(SPACE)  &kp RG(RS(NUMBER_4))  &trans              &trans            &trans         &trans
-&doin   &trans              &trans              &trans         &trans         &trans           &trans         &trans                                                                     &doin
+&trans  &kp LC(LS(TAB))             &kp LG(LC(F))       &kp LC(TAB)            &kp LG(T)                                      &trans                &kp RS(TAB)         &kp LC(UP_ARROW)  &kp RC(TAB)    &trans
+&trans  &kp LG(LC(LA(LEFT_ARROW)))  &kp LG(DOWN_ARROW)  &kp LG(LC(LA(RIGHT)))  &kp LG(W)                       &trans         &kp RG(RS(NUMBER_3))  &kp LC(LEFT_ARROW)  &kp RG(F3)        &kp LC(RIGHT)  &trans
+&trans  &kp LS(TAB)                 &kp LEFT_GUI        &kp TAB                &kp LS(LG(T))  &kp LG(SPACE)    &kp RG(SPACE)  &kp RG(RS(NUMBER_4))  &trans              &trans            &trans         &trans
+&doin   &trans                      &trans              &trans                 &trans         &trans           &trans         &trans                                                                     &doin
             >;
 
             sensor-bindings = <&inc_dec_kp LA(RIGHT) LC(LEFT)>;
@@ -170,10 +226,10 @@
 
         iPad_shortcut {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LG(T)                                      &trans                &kp RC(RS(TAB))     &kp RC(UP_ARROW)  &kp RC(TAB)    &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LG(W)                       &trans         &kp RG(RS(NUMBER_3))  &kp RC(LEFT_ARROW)  &kp RG(F3)        &kp RC(RIGHT)  &trans
-&trans  &kp LS(TAB)         &kp LEFT_GUI        &kp TAB        &kp LS(LG(T))  &kp LG(SPACE)    &kp RG(SPACE)  &kp RG(RS(NUMBER_4))  &trans              &trans            &trans         &trans
-&doin   &trans              &trans              &trans         &trans         &trans           &trans         &trans                                                                     &doin
+&trans  &kp LC(LS(TAB))    &iPad_window_max    &kp LC(TAB)         &kp LG(T)                                      &trans                &kp RC(RS(TAB))     &kp RC(UP_ARROW)  &kp RC(TAB)    &trans
+&trans  &iPad_window_left  &kp LG(DOWN_ARROW)  &iPad_window_right  &kp LG(W)                       &trans         &kp RG(RS(NUMBER_3))  &kp RC(LEFT_ARROW)  &kp RG(F3)        &kp RC(RIGHT)  &trans
+&trans  &kp LS(TAB)        &kp LEFT_GUI        &kp TAB             &kp LS(LG(T))  &kp LG(SPACE)    &kp RG(SPACE)  &kp RG(RS(NUMBER_4))  &trans              &trans            &trans         &trans
+&doin   &trans             &trans              &trans              &trans         &trans           &trans         &trans                                                                     &doin
             >;
 
             sensor-bindings = <&inc_dec_kp LA(RIGHT) LC(LEFT)>;
@@ -212,7 +268,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        Mouse {
+        Mouse_win {
             bindings = <
 &kp PAGE_UP  &trans          &kp UP_ARROW    &trans           &kp PAGE_DOWN                    &trans  &trans    &mkp MB3  &trans  &trans
 &kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
@@ -236,6 +292,15 @@
 &trans  &trans  &trans  &trans  &trans            &trans  &trans    &trans    &trans        &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans        &bt BT_CLR_ALL  &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                            &trans
+            >;
+        };
+
+        Mouse_apple {
+            bindings = <
+&kp PAGE_UP  &trans          &kp UP_ARROW    &trans           &kp PAGE_DOWN                    &trans  &trans                &mkp MB3               &trans  &trans
+&kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans  &trans  &mkp MB1              &mkp MB2               &trans  &trans
+&trans       &trans          &trans          &trans           &trans         &trans    &trans  &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans  &trans
+&trans       &trans          &trans          &trans           &trans         &trans    &trans  &trans                                                       &trans
             >;
         };
     };
