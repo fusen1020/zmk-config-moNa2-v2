@@ -106,7 +106,7 @@ layers:
   - H
   - J
   - K
-  - {t: L, h: Mouse_win}
+  - {t: L, h: Mouse_apple}
   - {t: ;, h: RIGHT GUI}
   - {t: Z, h: LEFT SHIFT}
   - X
@@ -123,7 +123,7 @@ layers:
   - {t: ESCAPE, h: Function}
   - LCTRL
   - LEFT ALT
-  - {t: BACKSPACE, h: Mouse_win}
+  - {t: BACKSPACE, h: Mouse_apple}
   - {t: SPACE, h: Number}
   - {t: LANG2, h: Mac_shortcut}
   - {t: LANG1, h: Mac_shortcut}
@@ -192,7 +192,7 @@ layers:
   - H
   - J
   - K
-  - {t: L, h: Mouse_win}
+  - {t: L, h: Mouse_apple}
   - {t: ;, h: RIGHT GUI}
   - {t: Z, h: LEFT SHIFT}
   - X
@@ -209,7 +209,7 @@ layers:
   - {t: ESCAPE, h: Function}
   - LCTRL
   - LEFT ALT
-  - {t: BACKSPACE, h: Mouse_win}
+  - {t: BACKSPACE, h: Mouse_apple}
   - {t: SPACE, h: Number}
   - {t: LANG2, h: iPad_shortcut}
   - {t: LANG1, h: iPad_shortcut}
@@ -536,7 +536,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
