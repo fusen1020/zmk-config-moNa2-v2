@@ -38,6 +38,11 @@
             bindings = <&kp TAB>;
             key-positions = <18 19>;
         };
+
+        equaol {
+            bindings = <&kp EQUAL>;
+            key-positions = <30 29>;
+        };
     };
 
     macros {
