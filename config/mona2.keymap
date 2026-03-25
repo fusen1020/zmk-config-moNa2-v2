@@ -240,18 +240,18 @@
 &trans  &trans  &trans     &trans    &trans                    &trans  &trans  &trans     &trans  &trans
 &kp N1  &kp N2  &kp N3     &kp N4    &kp N5            &trans  &kp N6  &kp N7  &kp N8     &kp N9  &kp N0
 &trans  &trans  &kp MINUS  &kp PLUS  &trans  &trans    &trans  &trans  &trans  &kp EQUAL  &trans  &trans
-&trans  &trans  &trans     &trans    &trans  &trans    &trans  &trans                             &trans
+&trans  &trans  &trans     &trans    &trans  &trans    &trans  &trans                             &kp DEL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         Symbol {
             bindings = <
-&trans        &trans      &trans         &trans        &trans                           &trans         &trans        &trans        &kp LBKT      &kp RBKT
-&kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)            &trans  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)
-&trans        &trans      &trans         &trans        &trans         &trans    &trans  &trans         &trans        &trans        &kp LS(LBRC)  &kp LS(RBRC)
-&trans        &trans      &trans         &trans        &trans         &trans    &trans  &trans                                                   &trans
+&trans        &trans      &trans         &trans         &trans                           &trans         &trans        &trans        &kp LBKT      &kp RBKT
+&kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)            &trans  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)
+&trans        &trans      &trans         &trans         &trans         &trans    &trans  &trans         &trans        &trans        &kp LS(LBRC)  &kp LS(RBRC)
+&trans        &trans      &trans         &kp BACKSPACE  &trans         &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
