@@ -194,7 +194,7 @@
             bindings = <
 &trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LC(T)                              &trans               &kp RC(RS(TAB))         &kp RG(TAB)  &kp RC(TAB)        &trans
 &trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LC(W)                   &trans     &kp RG(PRINTSCREEN)  &kp RG(RC(LEFT_ARROW))  &kp RG(D)    &kp RG(RC(RIGHT))  &trans
-&trans  &kp LS(TAB)         &kp LALT            &kp TAB        &kp LS(LC(T))  &kp LG(S)    &kp RG(S)  &kp RG(RS(S))        &kp LC(PAGE_DOWN)       &trans       &kp PG_UP          &trans
+&trans  &kp LS(TAB)         &kp LALT            &kp TAB        &kp LS(LC(T))  &kp LG(S)    &kp RG(S)  &kp RG(RS(S))        &kp LC(PG_UP)           &trans       &kp LC(PAGE_DOWN)  &trans
 &doin   &trans              &trans              &trans         &trans         &trans       &trans     &trans                                                                       &doin
             >;
 
