@@ -194,7 +194,7 @@
             bindings = <
 &trans  &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)    &kp LC(T)                              &trans               &kp RC(RS(TAB))         &kp RG(TAB)  &kp RC(TAB)        &trans
 &trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LC(W)                   &trans     &kp RG(PRINTSCREEN)  &kp RG(RC(LEFT_ARROW))  &kp RG(D)    &kp RG(RC(RIGHT))  &trans
-&trans  &kp LS(TAB)         &kp LALT            &kp TAB        &kp LS(LC(T))  &kp LG(S)    &kp RG(S)  &kp RG(RS(S))        &trans                  &trans       &trans             &trans
+&trans  &kp LS(TAB)         &kp LALT            &kp TAB        &kp LS(LC(T))  &kp LG(S)    &kp RG(S)  &kp RG(RS(S))        &kp LC(PAGE_DOWN)       &trans       &kp PG_UP          &trans
 &doin   &trans              &trans              &trans         &trans         &trans       &trans     &trans                                                                       &doin
             >;
 
@@ -280,10 +280,10 @@
 
         Mouse_win {
             bindings = <
-&kp PAGE_UP  &trans          &kp UP_ARROW    &trans           &kp PAGE_DOWN                    &trans  &trans    &mkp MB3  &trans  &trans
-&kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans       &trans          &trans          &trans           &trans         &trans    &trans  &trans  &mkp MB4  &mkp MB5  &trans  &trans
-&trans       &trans          &trans          &trans           &trans         &trans    &trans  &trans                              &trans
+&trans  &kp HOME        &kp UP_ARROW    &kp END          &trans                           &trans  &trans    &mkp MB3  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans          &trans          &trans           &kp PAGE_DOWN  &trans    &trans  &trans  &mkp MB4  &mkp MB5  &trans  &trans
+&trans  &trans          &trans          &trans           &trans         &trans    &trans  &trans                              &trans
             >;
         };
 
