@@ -73,9 +73,9 @@ layers:
   - Gui+S
   - Gui+S
   - Gui+Sft+S
+  - Ctl+PAGE DOWN
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PG UP
   - {t: ▽, type: trans}
   - '&doin'
   - {t: ▽, type: trans}
@@ -388,21 +388,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Mouse_win:
-  - PAGE UP
   - {t: ▽, type: trans}
+  - HOME
   - UP ARROW
+  - END
   - {t: ▽, type: trans}
-  - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - HOME
+  - {t: ▽, type: trans}
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - END
+  - PG UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
@@ -413,7 +413,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
